@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="250.0" layoutY="186.0" prefHeight="246.0" prefWidth="650.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+        <columns>
+          <TableColumn prefWidth="96.0" text="User" />
+          <TableColumn prefWidth="345.0" text="Content" />
+            <TableColumn prefWidth="123.0" text="Hashtags" />
+            <TableColumn prefWidth="84.0" text="Date" />
+        </columns>
+      </TableView>
+      <Text layoutX="25.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Twitter">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="101.0" layoutY="52.0" prefHeight="25.0" prefWidth="135.0" promptText="Enter a text" />
+      <RadioButton layoutX="244.0" layoutY="56.0" mnemonicParsing="false" text="Hashtag" />
+      <RadioButton layoutX="317.0" layoutY="56.0" mnemonicParsing="false" text="Keyword" />
+      <DatePicker layoutX="135.0" layoutY="96.0" />
+      <Text layoutX="25.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by day:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
